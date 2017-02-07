@@ -29,12 +29,14 @@ tweet = function() {
 };
 
 generate = function() {
-  var rand1, text;
+  var dousi, dousiAfter, rand1, text;
   text = '';
   text += getWord('いつ');
   text += getWord('どこ') + 'で';
   text += getWord('誰') + 'が';
-  text += getWord('どうし') + 'てるのに';
+  dousi = getWord('どうし');
+  dousiAfter = dousi.slice(-1) === 'て' ? 'るのに' : 'てるのに';
+  text += dousi + dousiAfter;
   text += getWord('誰') + 'が';
   text += getWord('どうし') + 'たので';
 

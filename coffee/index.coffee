@@ -27,7 +27,10 @@ generate = ->
   text += getWord('いつ')
   text += getWord('どこ')+'で'
   text += getWord('誰')+'が'
-  text += getWord('どうし')+'てるのに'
+  # ててるのに対策
+  dousi = getWord('どうし')
+  dousiAfter = if dousi.slice(-1) is 'て' then 'るのに' else 'てるのに'
+  text += dousi+dousiAfter
   text += getWord('誰')+'が'
   text += getWord('どうし')+'たので'
   ###
