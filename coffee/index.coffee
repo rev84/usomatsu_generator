@@ -14,7 +14,7 @@ exec = ->
   $('.postdate').html(getNow())
 
 tweet = ->
-  text = decodeURIComponent $('#twitter_body').html()+' #嘘松ジェネレータ'
+  text = decodeURIComponent $('#twitter_body').html()+' %23嘘松ジェネレータ'
   url = 'http://twitter.com/share?url='+location.href+'&text='+text+',scrollbars=yes,Width=575,Height=400'
   w = window.open(url)
   w.focus()
