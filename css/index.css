@@ -12,10 +12,12 @@ html {
   font-style, font-weight, letter-spacing, line-height, word-spacing: normal;
 }
 
+/*
 a, a:visited {
   color: #4099FF;
   text-decoration: none;
 }
+*/
 
 .wrapper {
   margin: 50px auto;
