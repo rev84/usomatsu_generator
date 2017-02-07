@@ -21,7 +21,7 @@ exec = function() {
 
 tweet = function() {
   var text, url, w;
-  text = decodeURIComponent($('#twitter_body').html() + ' %23嘘松ジェネレータ');
+  text = encodeURIComponent($('#twitter_body').html() + ' #嘘松ジェネレータ');
   url = 'http://twitter.com/share?url=' + location.href + '&text=' + text + ',scrollbars=yes,Width=575,Height=400';
   w = window.open(url);
   return w.focus();
