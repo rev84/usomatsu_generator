@@ -1,6 +1,6 @@
 $().ready ->
   $('#generate').on 'click', ->
-    $('.twitter_body').html generate()
+    $('#twitter_body').html generate()
     replayCount = Utl.rand(10, 100)
     retweetCount = Utl.rand(1000, 20000)
     heartCount = retweetCount + Utl.rand(1000, 20000)
@@ -8,6 +8,15 @@ $().ready ->
     $('.fontawesome-retweet').html(convertNum(retweetCount))
     $('.fontawesome-heart').html(convertNum(heartCount))
     $('.postdate').html(getNow())
+
+  $('.fontawesome-retweet').on 'click', tweet
+    
+
+tweet = ->
+  text = decodeURIComponent $('#twitter_body').html()+' #嘘松ジェネレータ'
+  url = 'http://twitter.com/share?url='+location.href+'&text='+text+',scrollbars=yes,Width=575,Height=400'
+  w = window.open(url)
+  w.focus()
 
 
 generate = ->
