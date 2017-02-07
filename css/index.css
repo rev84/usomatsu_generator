@@ -81,9 +81,21 @@ article {
   font-size: 1.2rem;
 }
 
-.status ul li .fontawesome-heart, .status ul li .fontawesome-retweet, .status ul li .fontawesome-reply {
+.status ul li .fontawesome-heart, .status ul li .fontawesome-reply {
   color: #aaa;
   font-size:15px !important;
+}
+
+.status ul li .fontawesome-retweet {
+  color:#19cf86;
+  font-size:15px !important;
+}
+
+#retweet_count {
+  color:#19cf86;
+}
+#replay_count, #heart_count {
+  color: #aaa;
 }
 
 .status li.time {

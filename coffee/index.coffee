@@ -1,6 +1,6 @@
 $().ready ->
   $('#generate').on 'click', exec
-  $('.fontawesome-retweet').on 'click', tweet
+  $('.fontawesome-retweet, #retweet_count, #retweet').on 'click', tweet
   exec()
 
 exec = ->

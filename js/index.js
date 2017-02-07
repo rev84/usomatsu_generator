@@ -3,7 +3,7 @@ var Utl, convertNum, exec, generate, getNow, getWord, tweet;
 
 $().ready(function() {
   $('#generate').on('click', exec);
-  $('.fontawesome-retweet').on('click', tweet);
+  $('.fontawesome-retweet, #retweet_count, #retweet').on('click', tweet);
   return exec();
 });
 
