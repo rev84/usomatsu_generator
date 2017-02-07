@@ -1,0 +1,98 @@
+@import url(http://weloveiconfonts.com/api/?family=fontawesome);
+
+[class*="fontawesome-"]:before {
+  font-family: 'fontawesome', sans-serif;
+}
+
+html {
+  color: #555;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 10px;
+  -webkit-font-smoothing: antialiased;
+  font-style, font-weight, letter-spacing, line-height, word-spacing: normal;
+}
+
+a, a:visited {
+  color: #4099FF;
+  text-decoration: none;
+}
+
+.wrapper {
+  margin: 50px auto;
+  width: 505px;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px #ddd;
+  overflow: hidden;
+}
+
+
+article {
+  padding: 14px 14px 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.twitter_header {
+  margin: 1px 0 7px;
+  font-weight: bold;
+}
+
+.twitter_header img {
+  width:50px;
+  float:left;
+  margin-right:10px;
+}
+.twitter_header .display_name {
+  display:block;
+  font-size:130%;
+  line-height: 1;
+}
+.twitter_header .screen_name {
+  display:block;
+  color:#8899a6;
+}
+
+.twitter_body {
+  font-size: 140%;
+}
+
+.postdate {
+  margin: 14px;
+  color: #aaa;
+  font-size:80%;
+}
+
+.status {
+  margin: 14px;
+  width: 221px;
+}
+
+.status ul {
+  padding-left:0 !important;
+}
+
+.status ul li {
+  display: inline-block;
+}
+
+.status ul li a {
+  margin: 0 8px;
+  font-size: 1.2rem;
+}
+
+.status ul li .fontawesome-heart, .status ul li .fontawesome-retweet, .status ul li .fontawesome-reply {
+  color: #aaa;
+  font-size:15px !important;
+}
+
+.status li.time {
+  float: left;
+}
+
+.button_form {
+  width:100%;
+  text-align:center;
+  position:fixed;
+  bottom:0;
+}
