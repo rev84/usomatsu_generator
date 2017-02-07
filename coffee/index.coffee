@@ -15,8 +15,9 @@ exec = ->
 
 tweet = ->
   text = encodeURIComponent $('#twitter_body').html()+' #嘘松ジェネレータ'
-  url = 'http://twitter.com/share?url='+location.href+'&text='+text+',scrollbars=yes,Width=575,Height=400'
-  w = window.open(url)
+  url = encodeURIComponent location.href
+  accessUrl = 'http://twitter.com/share?url='+url+'&text='+text
+  w = window.open(accessUrl, '', 'scrollbars=yes,Width=575,Height=400')
   w.focus()
 
 
