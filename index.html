@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width">
+<title>嘘松ジェネレータ</title>
+<link rel="shortcut icon" href="favicon.ico">
+
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-2.2.1.min.js" integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00=" crossorigin="anonymous"></script>
+
+<!-- jQuery Plugin -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/jquery-datetimepicker/2.5.1/jquery.datetimepicker.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-datetimepicker/2.5.1/jquery.datetimepicker.min.js"></script>
+
+
+<!-- Bootstrap -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flat-ui/2.3.0/css/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flat-ui/2.3.0/css/flat-ui.min.css" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flat-ui/2.3.0/js/flat-ui.min.js"></script>
+
+<!-- mine -->
+<script src="./js/words.js"></script>
+<script src="./js/index.js"></script>
+<link rel="stylesheet" type="text/css" href="./css/index.css">
+
+
+</head>
+
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="./">嘘松ジェネレータ</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <!-- 左側 -->
+      <!--
+      <ul class="nav navbar-nav">
+        <li><a href="#">リンク</a></li>
+      </ul>
+      -->
+
+      <!-- 右側 -->
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="https://github.com/rev84/" target="_blank">GitHub</a></li>
+        <li><a href="https://twitter.com/rev84" target="_blank">developed by @rev84</a></li>
+        <!--
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">ドロップダウン<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">ドロップダウンメニュー</a></li>
+          </ul>
+        </li>
+        -->
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container center">
+
+<div id="text">
+
+</div>
+
+<button id="generate" class="btn btn-primary">生成</button>
+
+</body>
+</html>
