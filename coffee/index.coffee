@@ -65,8 +65,8 @@ getNow = ->
   NowMon = Nowymdhms.getMonth() + 1
   NowDay = Nowymdhms.getDate()
   NowWeek = Nowymdhms.getDay()
-  NowHour = Nowymdhms.getHours()
-  NowMin = Nowymdhms.getMinutes()
-  NowSec = Nowymdhms.getSeconds()
+  NowHour = ('0'+Nowymdhms.getHours()).slice(-2)
+  NowMin = ('0'+Nowymdhms.getMinutes()).slice(-2)
+  NowSec = ('0'+Nowymdhms.getSeconds()).slice(-2)
 
   ''+NowHour+':'+NowMin+' - '+NowYear+'年'+NowMon+'月'+NowDay+'日'
