@@ -1,16 +1,17 @@
 $().ready ->
-  $('#generate').on 'click', ->
-    $('#twitter_body').html generate()
-    replayCount = Utl.rand(10, 100)
-    retweetCount = Utl.rand(1000, 20000)
-    heartCount = retweetCount + Utl.rand(1000, 20000)
-    $('.fontawesome-reply').html(convertNum(replayCount))
-    $('.fontawesome-retweet').html(convertNum(retweetCount))
-    $('.fontawesome-heart').html(convertNum(heartCount))
-    $('.postdate').html(getNow())
-
+  $('#generate').on 'click', exec
   $('.fontawesome-retweet').on 'click', tweet
-    
+  exec()
+
+exec = ->
+  $('#twitter_body').html generate()
+  replayCount = Utl.rand(10, 100)
+  retweetCount = Utl.rand(1000, 20000)
+  heartCount = retweetCount + Utl.rand(1000, 20000)
+  $('.fontawesome-reply').html(convertNum(replayCount))
+  $('.fontawesome-retweet').html(convertNum(retweetCount))
+  $('.fontawesome-heart').html(convertNum(heartCount))
+  $('.postdate').html(getNow())
 
 tweet = ->
   text = decodeURIComponent $('#twitter_body').html()+' #嘘松ジェネレータ'
