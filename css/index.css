@@ -12,16 +12,14 @@ html {
   font-style, font-weight, letter-spacing, line-height, word-spacing: normal;
 }
 
-/*
-a, a:visited {
-  color: #4099FF;
-  text-decoration: none;
+body {
+  padding-bottom:100px;
 }
-*/
 
 .wrapper {
   margin: 50px auto;
-  width: 505px;
+  width: 90%;
+  max-width: 505px;
   background: #fff;
   border: 1px solid #ccc;
   border-radius: 5px;
